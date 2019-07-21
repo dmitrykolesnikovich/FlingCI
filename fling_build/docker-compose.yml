@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    fling_build_base:
+        build: './build_base' 
+        volumes:
+        - ./build_data/build_base:/usr/share/build_data
+    fling_build_gcc:
+        build: './build_gcc' 
+        volumes:
+        - ./build_data/build_gcc:/usr/share/build_gcc
+    fling_build_clang:
+        build: './build_clang' 
+        volumes:
+        - ./build_data/build_clang:/usr/share/build_clang

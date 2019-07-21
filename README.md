@@ -4,12 +4,16 @@ I followed [this](https://technology.riotgames.com/news/putting-jenkins-docker-c
 
 # Getting Started
 
-This being a `docker-compose` setup, it is very simple.
+There is a make file for simple usage of this setup
 
-* Clone the repo
-* `docker-compose build`
-* `docker-compose up -d`
+* `make build`
+* `make run`
+* `make stop`
+* `make clean-data`
+* `make clean-images`
+* `make ps`
+
+These commands all just end up running `docker-compose` commands, so if you don't want to use make
+then just use docker.
 
 You can run `catPasswd.sh` for a quick and easy way to get your inital Jenkins setup password. 
-
-All done! 
