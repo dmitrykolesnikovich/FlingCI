@@ -15,3 +15,5 @@ ps:
 	@docker-compose -p fling_jenkins ps
 jenkins-log:
 	@docker-compose -p fling_jenkins exec master tail -f /var/log/jenkins/jenkins.log
+catpass:
+	@docker-compose -p fling_jenkins exec master cat /var/jenkins_home/secrets/initialAdminPassword

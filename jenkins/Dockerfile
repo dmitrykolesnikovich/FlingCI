@@ -23,5 +23,5 @@ ENV JENKINS_USER admin
 ENV JENKINS_PASS admin
 
 # Set default options
-ENV JAVA_OPTS="-Xmx4096m -Djenkins.install.runSetupWizard=false"
+ENV JAVA_OPTS="-Xmx4096m"
 ENV JENKINS_OPTS=" --handlerCountMax=100"
