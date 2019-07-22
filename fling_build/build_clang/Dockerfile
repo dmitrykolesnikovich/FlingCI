@@ -15,3 +15,11 @@ RUN ls -l
 
 # Build everything
 RUN make
+
+
+# Copy assets and config to the tests folder
+RUN cp -r ../Assets ./FlingTests/bin
+RUN cp -r ../Config ./FlingTests/bin
+
+# Run unit tests
+CMD ["./FlingTests/bin/FlingTests"]
