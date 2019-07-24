@@ -1,11 +1,15 @@
 version: '2'
 
 services:
-    fling_build_base:
+    fling-build-base:
         build: './build_base' 
+        container_name: fling_build_base
 
-    fling_build_gcc:
+    build_gcc:
         build: './build_gcc' 
-
-    fling_build_clang:
+        depends_on: 
+            - fling-build-base
+    build_clang:
         build: './build_clang' 
+        depends_on: 
+            - fling-build-base
