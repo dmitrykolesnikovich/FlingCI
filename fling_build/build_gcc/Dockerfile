@@ -21,6 +21,7 @@ RUN ls -l
 # Copy assets and config to the tests folder
 RUN cp -r ../Assets ./FlingTests/bin
 RUN cp -r ../Config ./FlingTests/bin
+WORKDIR /home/Fling/FlingEngine/build/FlingTests/bin/
 
 # Run unit tests
-CMD ["./FlingTests/bin/FlingTests"]
+CMD ["./FlingTests"]

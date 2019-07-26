@@ -1,0 +1,4 @@
+# Fling Jenkins Integration
+
+`Warning` : this is not finished! This docker compose will build and 
+run a Jenkins docker instance, but the jobs do not yet build the Fling engine. 

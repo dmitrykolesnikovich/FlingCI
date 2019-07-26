@@ -37,6 +37,7 @@ WORKDIR /home/Fling
 
 RUN git clone https://github.com/flingengine/FlingEngine.git
 WORKDIR /home/Fling/FlingEngine
+RUN git pull
 
 RUN git submodule update --init --recursive
 RUN mkdir build -p

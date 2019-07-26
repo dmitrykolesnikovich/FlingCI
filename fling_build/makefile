@@ -1,7 +1,10 @@
 
 build:
-	@docker-compose -p fling_build build
+	@docker build -t fling_build_base ./build_base; docker-compose -p fling_build build;
+
 run:
+	@docker-compose -p fling_build up
+run-d:
 	@docker-compose -p fling_build up -d
 run-win:
 	@docker-compose -p fling_build up -d

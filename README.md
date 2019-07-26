@@ -4,16 +4,6 @@ I followed [this](https://technology.riotgames.com/news/putting-jenkins-docker-c
 
 # Getting Started
 
-There is a make file for simple usage of this setup
+To run Jenkins, see the `jenkins` folder. 
 
-* `make build`
-* `make run`
-* `make stop`
-* `make clean-data`
-* `make clean-images`
-* `make ps`
-
-These commands all just end up running `docker-compose` commands, so if you don't want to use make
-then just use docker.
-
-You can run `catPasswd.sh` for a quick and easy way to get your inital Jenkins setup password. 
+To build Fling with Docker, see the `fling_build` folder.
