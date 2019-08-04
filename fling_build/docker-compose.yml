@@ -13,3 +13,7 @@ services:
         build: './build_clang' 
         depends_on: 
             - fling-build-base
+    build_cppcheck:
+        build: './build_cppcheck' 
+        depends_on: 
+            - fling-build-base

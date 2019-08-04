@@ -8,6 +8,7 @@ RUN apt-get install wget -y
 RUN apt-get install build-essential -y
 RUN apt-get install clang gcc g++ git -y
 RUN apt-get install -y vim
+RUN apt-get install -y cppcheck
 
 # Install Cmake
 RUN wget -qO- "https://cmake.org/files/v3.13/cmake-3.13.4-Linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local
