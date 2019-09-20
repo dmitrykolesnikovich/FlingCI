@@ -4,6 +4,10 @@ LABEL maintainer="benjamin.hoffman.dev@gmail.com"
 # Create log folder
 USER root
 
+RUN apk add py-pip
+RUN apk add python-dev libffi-dev openssl-dev gcc libc-dev make
+RUN pip install docker-compose
+
 # Create log dir for jenkins
 RUN mkdir /var/log/jenkins
 
